@@ -1,0 +1,22 @@
+Classification of patterns
+
+Design patterns differ by their complexity, level of detail and scale of applicability to the
+entire system being designed. There's an analogy for this about road construction: you can make an
+intersection safer by either installing traffic lights or building an entire multi-level
+interchange with underground passages for pedestrians.
+
+The most basic and low-level patterns are called "idioms". They usually apply only to a single
+programming language.
+
+The most universal and high-level patterns are architectural patterns. Developers can implement
+these patterns virtually in any language. They can be used to design the architecture of an entire
+application.
+
+The 3 main groups of patterns:
+
+  - Creational patterns (object creation): provide object creation mechanisms that increase the
+    flexibility and reuse of existing code.
+  - Structural patterns (assemble objects and classes): explain how to assemble objects and classes
+    into larger structures, while keeping these structures flexible and efficient.
+  - Behavioral patterns (communication and responsabilities): take care of effective communication
+    and the assignment of responsabilities between objects.
