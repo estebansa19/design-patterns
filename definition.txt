@@ -25,3 +25,13 @@ Here are the sections that are usually present in a pattern description
 - Motivation, explains the problem and the solution the pattern makes possible.
 - Structure, shows each part of the pattern and how they are related.
 - Code example, makes it easier to grasp the idea behind the pattern.
+
+
+
+Why should I learn design patterns?
+
+They're a toolkit of tried an tested solutions to common problems in software design.
+
+Even if you don't use the patterns, knowing patterns is still useful because they define a common
+language that you and your teammates can use to communicate more efficiently, you can say: "Just use
+a Singleton for that", and everyone will understand what's the idea.
