@@ -8,11 +8,11 @@ a solution that suits the nature of your own program.
 
 Patterns are usually confused with algorithms, because both concepts are describe typical solutions
 to known problems. While an algorithm always defines a clear set of actions or kind of a step by
-step guide, a patter is a more high-level description of a solution. The code of the same patter in
-two programs may be different.
+step guide, a pattern is a more high-level description of a solution. The code of the same pattern
+in two programs may be different.
 
 An analogy to an algorithm is a cooking recipe, is a step by step guide. On the other hand, a
-patter is more like a blueprint, you can see what the results and its features are but the exact
+pattern is more like a blueprint, you can see what the results and its features are but the exact
 order of implementation is up to you.
 
 
