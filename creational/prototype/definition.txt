@@ -1,0 +1,10 @@
+Creational - Prototype
+
+Definition
+
+Is a design pattern that lets you copy existing objects without making your code dependent on their
+classes.
+
+A real world analogy for this pattern, could be the process of mitotic cell division. After miotic
+division, a pair of identicals cell is formed. The original cell acts as a prototype and takes an
+active role in creating the copy.

@@ -37,15 +37,15 @@ should have a base common class or interface.
 Applicability
 
 - Use the Factory Method when you don't know beforehand the exact types and dependencies of the
-objects you code should work with. For example, to add a new product type to the app, you'll only
-need to create a new creator subclass and overwrite the factory method in it.
+  objects you code should work with. For example, to add a new product type to the app, you'll only
+  need to create a new creator subclass and overwrite the factory method in it.
 
 - Use the Factory Method when you want the users of your library or framework to be able to extend
-the behaviour of the internal components. They will have a way to override the default method
-definition and extend the component itself.
+  the behaviour of the internal components. They will have a way to override the default method
+  definition and extend the component itself.
 
 - Use the Factory Method when you want to save system resources by reusing existing objects instead
-of rebuilding them each time.
+  of rebuilding them each time.
 
 The constructor of a class will always return a new object, it can't return new existing instances.
 Therefore, you need to have a regular method capable of creating new objects as well as reusing
