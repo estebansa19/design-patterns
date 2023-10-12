@@ -2,7 +2,7 @@
 
 Context
 
-Lets save you have an object and you want to make an exact copy of it. You will have to create an
+Lets say you have an object and you want to make an exact copy of it. You will have to create an
 object from the same class and go through all the fields of the original object and copy their
 values over the new object.
 
@@ -38,7 +38,7 @@ constructing a new object from scratch.
 Applicability
 
 - Use the Prototype Pattern when your code shouldn't depend on the concrete classes of objects that
-  you need to copy. This patterns provides the cliend code with the interface for working with
+  you need to copy. This patterns provides the client code with the interface for working with
   objects that support cloning. This interface makes the client code independent from the concrete
   classes of objects that it clones.
 
