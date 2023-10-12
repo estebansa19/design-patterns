@@ -56,8 +56,10 @@ existing ones, a factory method.
 Pros
 
 - You avoid tight coupling between the creator and the concrete products.
+
 - Single Responsability. The creation of the object will be in one place in the program, making the
   code easier to support.
+
 - Open/Closed. You can introduce new types of products into the program without breaking the
   existing client code.
 =end

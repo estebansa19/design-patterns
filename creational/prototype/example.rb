@@ -53,5 +53,73 @@ Applicability
 
 
 
-Pros and cons
+Pros
+
+- You can clone objects without coupling to their concrete classes.
+
+- You can get rid off repeated initialization code.
+
+- You can produce complex objects more conveniently.
+
+- It is an alternative to inheritance when dealing with configuration presets for complex objects.
+
+
+
+Cons
+
+- Cloning the relations of the objects could be tricky.
+
 =end
+
+class Robot
+  attr_accessor :model, :price, :processor
+
+  def clone
+    deep_copy(self)
+  end
+
+  private
+
+  def deep_copy(object)
+    Marshal.load(Marshal.dump(object))
+  end
+end
+
+class Processor
+  attr_accessor :robot
+
+  def initialize(robot)
+    @robot = robot
+  end
+end
+
+obj1 = Robot.new
+obj1.model = 'A1B2'
+obj1.price = 666
+obj1.processor = Processor.new(obj1)
+
+obj2 = obj1.clone
+
+if obj1.model.equal?(obj2.model)
+  puts 'The model of the robot has not been cloned :('
+else
+  puts 'The model of the robot has been cloned!'
+end
+
+if obj1.price == obj2.price
+  puts 'The price of the robot has been cloned!'
+else
+  puts 'The price of the robot has not been cloned :()'
+end
+
+if obj1.processor.equal?(obj2.processor)
+  puts 'The processor of the robot has not been cloned :('
+else
+  puts 'The processor of the robot has been cloned!'
+end
+
+if obj1.processor.robot.equal?(obj2.processor.robot)
+  puts 'Processor is linked to the original object :('
+else
+  puts 'Processor is linked to the clone object!'
+end
