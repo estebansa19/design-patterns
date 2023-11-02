@@ -1,0 +1,6 @@
+Creational - Builder
+
+Definition
+
+Is a creational design pattern that let's you construct complex objects step by step. The pattern
+allows you to produce different type of an object using the same construction code.
