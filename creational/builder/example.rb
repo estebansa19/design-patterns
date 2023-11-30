@@ -12,7 +12,7 @@ flavors and other specifications?
 
 The easiest solution is to extend the base Cake and create a set of subclasses to cover all
 combinations of parameters. The problem is that, eventually you will end up with a considerable
-number of subclasses. Any new paramater will require growing up this herarchy. Besides, imagine
+number of subclasses. Any new parameter will require growing up this herarchy. Besides, imagine
 having to modify a huge amount of subclasses due to a refactor.
 
 Another approach will be to create a giant constructor in the base Cake class, with all possible
@@ -67,7 +67,7 @@ Pros
 
 - You can construct objects step by step, defer construction steps or execute steps recursively.
 
-- You can reuse the same construction code when building different types of objects.
+- You can reuse the sameq construction code when building different types of objects.
 
 - Single Responsability Principle. You are isolating complex code construction from the business
   logic of the product.
